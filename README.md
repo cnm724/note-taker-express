@@ -1,0 +1,1 @@
+clog middleware and notes.js code adapted from mini-project week 11
