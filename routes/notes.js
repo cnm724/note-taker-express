@@ -7,6 +7,7 @@ const notes = express.Router();
 const jsonPath = path.join(__dirname, '../db/db.json');
 
 // API Routes
+// GET route to retrive all the notes
 notes.get('/api/notes', (req, res) => {
     fs.readFile(jsonPath, 'utf8', (err, data) => {
         if (err) {
@@ -18,6 +19,7 @@ notes.get('/api/notes', (req, res) => {
     });
 });
 
+// POST route for a new note
 notes.post('/api/notes', (req, res) => {
     const newNote = {...req.body, id: uuidv4()};
 
@@ -41,6 +43,7 @@ notes.post('/api/notes', (req, res) => {
     });
 });
 
+// DELETE Route for a specific note
   notes.delete('/api/notes/:id', (req, res) => {
     const noteId = req.params.id;
 
@@ -50,6 +53,7 @@ notes.post('/api/notes', (req, res) => {
             res.status(500).send('Error reading notes');
         } else {
             let notes = JSON.parse(data);
+                // Makes a new array of all notes except the one being deleted
             const updatedNotes = notes.filter(note => note.id !== noteId);
 
             fs.writeFile(jsonPath, JSON.stringify(updatedNotes, null, 4), (err) => {

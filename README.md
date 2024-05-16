@@ -12,7 +12,7 @@
 </div>
 
 ## Description
-This application was created to allow a user to add, save and delete notes. This project was created to show what I have learned about express.js and how to effectively create routes and work on the backend.
+This application was created to allow a user to create, save and delete notes. This project was created to show what I have learned about express.js and how to effectively create routes and work on the backend.
 
 [Click Here to Check out my Note-Taker application](https://note-taker-express-3f5r.onrender.com)
 
@@ -20,6 +20,10 @@ This application was created to allow a user to add, save and delete notes. This
 
 ![demo gif](https://github.com/cnm724/note-taker-express/blob/main/2024-05-15%2018-52-38.gif)
 
+## License
+
+This project is covered by the MIT license.
+
 ## Credits
 
-* Clog middleware and notes.js code adapted from mini-project week 11!
+* Clog.js and notes.js code adapted from mini-project week 11!
