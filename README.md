@@ -18,13 +18,7 @@ This application was created to allow a user to add, save and delete notes. This
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![demo gif](https://github.com/cnm724/note-taker-express/blob/main/2024-05-15%2018-52-38.gif)
 
 ## Credits
 
